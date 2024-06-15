@@ -1,0 +1,442 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 120vh;
+    background-color: #000000;
+    background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
+    display: block; 
+    align-items: start; 
+    overflow-y: scroll;
+}
+.timerBody {
+    width: 36.4%;
+    height: 46.2%;
+    background-color: #140e0e;
+    background-image: url("https://www.transparenttextures.com/patterns/brushed-alum.png");
+    border: 3px solid #000000bb;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 4;
+    position: relative;
+    top: 17.5%;
+    border-radius: 10px;
+    box-shadow: 1px 200px 300px -41px rgba(0,0,0,0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timerBase {
+    width: 32.29%;
+    height: 6.4%;
+    background-color: #140e0e;
+    background-image: url("https://www.transparenttextures.com/patterns/brushed-alum.png");
+    border-top: 10px solid #000000bb;
+    border-left: 3px solid #000000bb; 
+    border-right: 3px solid #000000bb;
+    border-bottom: 3px solid #000000bb;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 4;
+    position: relative;
+    top: 17.5%;
+    border-radius: 10px;
+}
+
+.buttonHolder {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+
+}
+.buttons {
+    margin-left: auto;
+    margin-right: auto;
+    width: 4.8%;
+    height: 2.7%;
+    border-radius: 20px;
+    border: 2px outset rgba(255, 255, 255, 0.842);
+    filter: drop-shadow(0px 26px 11px #000000);    
+}
+i {
+    font-size: 20px;
+    color: #000000bb;
+}
+.playIcon, .playIcon::before {
+    display: none;
+}
+
+.buttons:hover {
+    background-color: rgba(255, 255, 255, 0.767);
+}
+
+.buttons:active { 
+    border: 2px inset  rgba(255, 255, 255, 0.842);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 3px 6px -12px inset, 
+                rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.tableTop {
+    width: 97.6%;
+    height: 97.4%;
+    background-color: #170404;
+    background-image: url("https://www.transparenttextures.com/patterns/purty-wood.png");
+    clip-path: polygon(8% 82%, 92% 82%, 100% 100%, 0 100%);
+    z-index: 1;
+}
+.tableBorder{
+    z-index: -1;
+    width: 41.8%;
+    height: 19%;
+    background-color: #000000;
+    clip-path: polygon(8% 82%, 92% 82%, 100% 100%, 0 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tableFront {
+    background-color: #170404;
+    background-image: url("https://www.transparenttextures.com/patterns/purty-wood.png");
+    width: 41.6%;
+    height: 4.6%;
+    border-bottom: 3px solid #000000bb;
+    border-left: 3px solid #000000bb;
+    border-right: 3px solid #000000bb;
+    z-index: 3;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.legs {
+    width: 41.6%;
+    display: flex;
+    justify-content:space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+.legs div {
+    display: flex;
+}
+.twoLegs {
+    display: flex;
+    justify-content: space-around;
+}
+
+.leg1 {
+    background-color: #170404;
+    background-image: url("https://www.transparenttextures.com/patterns/purty-wood.png");
+    width: 30px;
+    height: 150px;
+    border-right: 4px solid #000000bb;
+    border-bottom: 3px solid #000000bb;
+    border-left: 3px solid #000000bb;
+    z-index: 1;
+}
+
+.leg1Side {
+    clip-path: polygon(100% 0, 0 0, 0 100%, 100% 95%);
+    background-color: #170404;
+    background-image: url("https://www.transparenttextures.com/patterns/purty-wood.png");
+    width: 25px;
+    height: 150px;
+    z-index: -1;
+    border-right: 4px solid #000000bb;
+}
+
+.leg2 {
+    background-color: #170404;
+    background-image: url("https://www.transparenttextures.com/patterns/purty-wood.png");
+    width: 25px;
+    height: 100px;
+    border-left: 3px solid #000000bb;
+    border-bottom: 3px solid #000000bb;;
+    border-right:3px solid #000000bb;
+    z-index: 2;
+}
+
+.leg2Side {
+    clip-path: polygon(100% 0, 0 0, 0 100%, 100% 95%);
+    background-color: #170404;
+    background-image: url("https://www.transparenttextures.com/patterns/purty-wood.png");
+    width: 20px;
+    height: 100px;
+    border-right: 4px solid #000000bb;
+}
+
+.leg3 {
+    background-color: #170404;
+    background-image: url("https://www.transparenttextures.com/patterns/purty-wood.png");
+    width: 30px;
+    height: 150px;
+    z-index: 1;
+    border-right: 4px solid #000000bb;
+    border-left: 4px solid #000000bb;
+    border-bottom: 4px solid #000000bb;
+}
+.leg3Side {
+    clip-path: polygon(100% 0, 0 0, 0 94%, 100% 100%);
+    background-color: #170404;
+    background-image: url("https://www.transparenttextures.com/patterns/purty-wood.png");
+    width: 25px;
+    height: 150px;
+    border-left: 3px solid #000000bb;
+    z-index: -1;
+}
+
+.leg4 {
+    background-color: #170404;
+    background-image: url("https://www.transparenttextures.com/patterns/purty-wood.png");
+    width: 30px;
+    height: 100px;
+    border: 3px solid #000000bb;
+    z-index: 2;
+}
+
+.leg4Side {
+    clip-path: polygon(100% 0, 0 0, 0 94%, 100% 100%);
+    background-color: #170404;
+    background-image: url("https://www.transparenttextures.com/patterns/purty-wood.png");
+    width: 20px;
+    height: 100px;
+    border-right: 1px solid #000000bb;
+    border-left: 4px solid #000000bb;
+}
+
+.timer {
+    width: 29.04%;
+    height: 100%;
+    background-color: #cecece;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, 
+                rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset,
+                inset -16px 16px 29px -10px rgba(0,0,0,0.75),
+                inset 16px -16px 29px -10px rgba(0,0,0,0.75);
+    border-radius: 20px;
+    border: 5px inset #00000088;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timerHolder {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 40.8%;
+    width: 100%;
+
+}
+.timer span {
+    width: 50%;
+    height: 100%;
+    font-size: 190px;
+    color:#000000; 
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.timer span:hover {
+    cursor: pointer;
+    border: 2px solid #fa000088;
+}
+
+.hoursTens, .minutesTens, .secondsTens {
+    border-top-left-radius: 19px;
+    border-bottom-left-radius: 19px;
+    color: rgb(0, 0, 0);
+}
+
+.hoursOnes, .minutesOnes, .secondsOnes {
+    border-top-right-radius: 19px;
+    border-bottom-right-radius: 19px;
+    color: rgb(0, 0, 0);
+}
+
+.table {
+    height: 100%;
+}
+@media  only screen and (min-width: 2560px) {
+    span {
+        text-align: center;
+    }
+
+} 
+@media only screen and (min-width: 2000px) and (max-width: 2220px) {
+   .timer span {
+
+        font-size: 170px;
+    }
+}
+
+@media only screen and (min-width: 1850px) and (max-width:2219px) {
+    .timer span {
+        font-size: 150px;
+    }
+}
+
+@media only screen and (min-width:1400px) and (max-width:1845px){
+    .timer span {
+        font-size: 130px;
+    }
+}
+
+@media only screen and (min-width:1150px) and (max-width:1399px) {
+    .timer span {
+        font-size: 110px;
+    }
+    .buttons {
+        width: 6.8%;
+        height: 4.7%;
+    }
+    i {
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 1179) {
+    .legs {
+        justify-content: space-evenly;
+    }
+}
+
+@media only screen and (min-width: 970px) and (max-width: 1149px){
+    .timer span {
+        font-size: 90px;
+    }
+    i {
+        font-size: 16px;
+    }
+    .buttons {
+        width: 6.8%;
+        height: 4.7%;
+    }
+}
+@media only screen and (min-width: 780px) and (max-width: 969px) {
+    .timer span {
+        font-size: 70px;
+    }
+    i {
+        font-size: 15px;
+    }
+    .buttons {
+        width: 8.8%;
+        height: 6.7%;
+    }
+}
+
+@media only screen and (min-width: 550px) and (max-width: 779px) {
+    .timer span {
+        font-size: 50px;
+    }
+    i {
+        font-size: 13px;
+    }
+    .buttons {
+        width: 8.8%;
+        height: 6.7%;
+    }
+}
+
+@media only screen and (min-width:440px) and (max-width:549px) {
+    .timer span {
+        font-size: 30px;
+    }
+    i {
+        font-size: 10px;
+    }
+    .buttons {
+        width: 10.8%;
+        height: 8.7%;
+    }
+}
+@media only screen and (min-width:200px) and (max-width: 439px) {
+    .timer span {
+        font-size: 20px;
+    }
+    i {
+        font-size: 8px;
+    }
+    .buttons {
+        width: 12.8%;
+        height: 10.7%;
+    }
+}
+
+@media only screen and (max-width: 487px) {
+    .leg1 {
+        width:15px;
+    }
+    .leg1Side {
+        width: 10px;
+    }
+    .leg2 {
+        width: 15px;
+    }
+    .leg2Side {
+        width: 10px;
+    }
+    .leg3 {
+        width: 15px;
+    }
+    .leg3Side {
+        width: 10px;
+    }
+    .leg4 {
+        width: 15px;
+    }
+    .leg4Side {
+        width: 10px;
+    }
+}
+
+@media only screen and (max-height: 730px) {
+    .timerBase {
+        height: 8.4%;
+    }
+}
+@media only screen and (max-height: 559px){
+    .timerBase {
+        height: 10.4%;
+    }
+}
+
+@media only screen and (max-height: 470px) {
+    .timerBase {
+        height: 12.4%;
+    }
+    .timerHolder {
+        height: 48.8%;
+    }
+}
+@media only screen and (max-height: 420px) {
+    .timerBase {
+        height: 14.4%;
+    }
+    .timerHolder {
+        height: 52.8%;
+    }
+}
+@media only screen and (max-height: 378px) {
+    .timerBase {
+        height: 16.4%;
+    }
+    .timerHolder {
+        height: 56.8%;
+    }
+}
+
+
+@media only screen and (max-height: 350px)  { 
+    .timerHolder {
+        height: 60.8%;
+    }
+    
+}
